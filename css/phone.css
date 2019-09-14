@@ -1,0 +1,153 @@
+.phone {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  margin-top: 20px;
+  height: 600px;
+  width: 300px;
+  border-radius: 40px;
+  background-color: #202020;
+  display: flex;
+  flex-direction: column;
+  align-content: right;
+}
+
+.camera {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #000;
+  position: relative;
+  top: 15px;
+  align-self: center;
+}
+
+.speaker {
+  height: 10px;
+  width: 60px;
+  border-radius: 5px;
+  background-color: #000;
+  position: relative;
+  top: 25px;
+  align-self: center;
+}
+
+.screen {
+  height: 440px;
+  width: 270px;
+  background-color: #fff;
+  position: relative;
+  top: 45px;
+  align-self: center;
+}
+
+.info {
+  box-sizing: border-box;
+  background: whitesmoke;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  padding: 0 5px;
+  justify-content: space-between;
+
+  span,
+  p {
+    align-self: center;
+  }
+
+  span {
+    color: #0099ff;
+  }
+
+  p {
+    margin: 0;
+    font-weight: bold;
+  }
+
+}
+
+.contact {
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.message {
+  box-sizing: border-box;
+  padding: 8px 10px;
+  max-width: 200px;
+  margin: 5px 10px;
+  border-radius: 15px;
+  position: relative;
+  clear: both;
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+.to {
+  float: right;
+  color: #fff;
+  background-color: #0099ff;
+
+  &::before {
+    content: '';
+    border: solid 10px;
+    border-color: transparent transparent #0099ff;
+    position: absolute;
+    float: right;
+    right: -7px;
+    bottom: 2px;
+  }
+}
+
+.from {
+  float: left;
+  background-color: #ececec;
+
+  &::after {
+    content: '';
+    border: solid 10px;
+    border-color: transparent transparent #ececec;
+    position: absolute;
+    z-index: 1;
+    bottom: 2px;
+    left: -7px;
+  }
+}
+
+.emoji-happy::before {
+  content: '\1F603';
+}
+
+.emoji-icecream::before {
+  content: '\1F366';
+}
+
+.home-button {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #000;
+  position: relative;
+  top: 60px;
+  align-self: center;
+}
+
+.home-icon {
+  height: 20px;
+  width: 20px;
+  border: solid 2px #aaa;
+  border-radius: 5px;
+  position: relative;
+  top: 18px;
+  left: 18px;
+}
+
+@keyframes scale {
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes dots {
+  0% {
+    opacity: 1;
+  }
+}
